@@ -1,0 +1,26 @@
+   Docker Network
+
+   . Let 2 containers talk without hassle. [mongo, mongo-express]
+
+   . docker network ls
+
+   . docker network create mongo-network
+
+   . docker network ls
+
+   . docker run -d -p 27017:27017 --name mongo --network mongo-network -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=admin mongo
+
+   . docker network inspect mongo-network // to see which containers are connected to mongo-network
+
+
+        Docker commands
+
+   . docker pull hello world
+
+   . docker run hello world
+
+   . docker run-it ubuntu
+
+   . exit
+
+   . docker stop <id>
